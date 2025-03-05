@@ -4,17 +4,21 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay]
-  \node[anchor = north east] at ($(current page.north east)+(-1.5cm,-1cm)$) {\includegraphics[height=3.5cm]{avatar}};
+  \node[anchor = north east] at ($(current page.north east)+(-1.0cm,-0.2cm)$) {\includegraphics[height=4.0cm]{photo_ff.jpg}};
 \end{tikzpicture}%
 %%%% 利用tikz来定位学校Logo，这部分没有遵守College logo positioning
-\begin{tikzpicture}[remember picture, overlay]
-  \node[anchor = north west] at ($(current page.north west)+(0.45cm, -0.45cm)$) {\includegraphics[width=7cm]{imperial.png}};
-\end{tikzpicture}
+% \begin{tikzpicture}[remember picture, overlay]
+%   \node[anchor = north west] at ($(current page.north west)+(0.45cm, -0.45cm)$) {\includegraphics[width=7cm]{imperial.png}};
+% \end{tikzpicture}
 
-\name{Dr. Jekyll}
-\basicContactInfo{13xxx-xxx-xxx}{zheyu.ye18@alumni.imperial.ac.uk}
 
-\input{body}
+\name{庞鹏飞 Pengfei Pang} % 姓名
+\basicContactInfo{+86 18279810655}{1912476644@qq.com} % 电话，邮箱
 
-\input{footer}
+% \name{庞鹏飞 Pengfei Pang} % 姓名
+% \contactInfo{+86 18279810655}{1912476644@qq.com}{pengfeipang.github.io} % 电话，邮箱，主页
+
+\input{body} % 主体
+
+% \input{footer} % 脚注
 \end{document}
